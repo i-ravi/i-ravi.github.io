@@ -1,145 +1,426 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Ravi Sharma</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <title>Ravi Sharma | Software Developer</title>
+    <meta
+      name="description"
+      content="Experienced Backend and Full-Stack Developer dedicated to driving product success."
+    />
+    <meta name="author" content="Ravi Sharma" />
 
-        <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1,minimum-scale=1"/>
+    <link rel="stylesheet" href="css/style.css" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="/assets/profile.jpeg"
+              alt="Ravi Sharma Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ravi Sharma</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+                <a target="_blank" href="https://drive.google.com/file/d/1QxQnhnptRaQ7fuy8Xo0Ytcvt8J9U7ZIl/view?usp=sharing" class="header__link">Resume </a>
+              </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link"> Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Home </a>
+            </li>
 
-        <link rel="stylesheet" type="text/css" href="default.css">
+            <li class="header__sm-menu-link">
+              <a href="./#about"> About </a>
+            </li>
 
-        <link id="theme-style" rel="stylesheet" type="text/css" href="">
-    </head>
-    <body>
-        <section class="s1">
-            <div class="main-container">
-                <div class="greeting-wrapper">
-                    <h1>Hi, I'm Ravi Sharma</h1>
-                </div>
-                <div class="intro-wrapper">
-                    <div class="nav-wrapper">
+            <li class="header__sm-menu-link">
+              <a href="./#projects"> Projects </a>
+            </li>
 
-                        <div class="dots-wrapper">
-                            <div id="dot1" class="browser-dots"></div>
-                            <div id="dot2" class="browser-dots"></div>
-                            <div id="dot3" class="browser-dots"></div>
-                        </div>
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Ravi Sharma</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Experienced Backend and Full-Stack Developer dedicated to driving product success. Let's explore how my expertise can elevate your projects to new heights.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://www.linkedin.com/in/ravi-sharma-500067183/"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/linkedin-dark.svg"
+              alt="Ravi Sharma Linkedin Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/i-ravi"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/github-dark.svg"
+              alt="Ravi Sharma Github Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Here you will find more information about me, what I do, and my
+            current skills mostly in terms of programming and technology
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Hey there!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Welcome to my corner of the web. I'm 
+                a <strong>Backend and Full-Stack Developer</strong> with a passion for crafting efficient 
+                and scalable solutions.
+              </p>
+              <p class="about__content-details-para">
+                In my journey as a developer, I've focused on building and 
+                managing the backend and full-stack aspects of websites and web applications, 
+                playing a crucial role in driving overall product success. 
+                Curious about my work? Check out some of my <strong>Projects</strong> in the Portfolio section.
 
-                        <ul id="navigation">
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="left-column">
-                        <img id="profile-pic" src="images/profile.jpeg">
-                        <h5 style="text-align: center ;line-height: 0;">personalise theme</h5>
-                        <div id="theme-option-wrapper">
-                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                            <div data-mode="pruple" id="pruple-mode" class="theme-dot"></div>
-                        </div>
-                    </div>
-                    <div class="right-column">
-                        <div id="preview-shadow">
-                            <div id="preview">
-                                <div id="corner-tl" class="corner"></div>
-                                <div id="corner-tr" class="corner"></div>
-                                <h3>About</h3>
-                                <p>An IT Engineering Student studying under Mumbai University.</p>
-                                <p>DEVELOPER || PROGRAMMER</p>
-                                <div id="corner-bl" class="corner"></div>
-                                <div id="corner-br" class="corner"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+            </p>
+            <p class="about__content-details-para">
+            I'm open to <strong>Job</strong> opportunities where I can
+            contribute, learn and grow. If you have a good opportunity that
+            matches my skills and experience then don't hesitate to
+            <strong>contact</strong> me.
+            </p>
             </div>
-        </section>
-
-        <section class="s2">
-            <div class="main-container">
-
-                <div class="about-wrapper">
-                    <div class="about-me">
-                        <h4>More About Me</h4>
-                        <p>I have a huge interest in Data Structures & Algorithm and Problem Solving. Having basic knowledge of Web Development.</p>
-
-                        <p>I also love to do Competitive Programming on Codechef, Codeforces, Hackerrank, etc.</p>
-
-                        <hr>
-                    <h4>Top Expertise</h4>
-                    <p>Full Stack Developer with primary focus on Spring MVC & React : <a target="_blank" href="resume/RaviSharma.pdf">Download Resume</a></p>
-
-                    <div id="skills">
-                        <ul>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>Data Structures & Algorithm</li>
-                        </ul>
-
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-
-                    </div>
-                    <div class="social-link">
-                        <img id="social-img" src="images/linkedin.png">
-                        <h4>Find me on Codechef & Hackerrank</h4>
-                        <a target="_blank" href="https://www.codechef.com/users/i_ravi">Codechef id : i_ravi</a>
-                        <br>
-                        <a target="_blank" href="https://www.hackerrank.com/rash24680">Hackerrank id : rash24680</a>
-                    </div>
-                </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">NodeJs</div>
+              <div class="skills__skill">C#</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">C/C++</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">Bootstrap</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">Redis</div>
+              <div class="skills__skill">DocumentDB</div>
+              <div class="skills__skill">VueJs</div>
+              <div class="skills__skill">AngularJs</div>
+              <div class="skills__skill">Linus</div>
+              <div class="skills__skill">Unix</div>
+              <div class="skills__skill">MacOS</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Nginx</div>
+              <div class="skills__skill">Git</div>
 
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here you will find some of the personal and company projects that I
+            created with each project containing its own case study
+          </span>
+        </h2>
 
-        <section class="s1">
-            <div class="main-container">
-                <h3 style:" text align: center ">Some of my Past Project </h3>
-                <div class="post-wrapper">
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="images/cat3.PNG">
-                            <div class="post-preview">
-                                <h6 class="post-title">Google PlayStore Analysis</h6>
-                                <p class="post-intro">Developed an insight project of Google PlayStore using Python Tkinter and some Machine Learning Libraries.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="images/cat3.PNG">
-                            <div class="post-preview">
-                                <h6 class="post-title">Flight & Hotel Booking</h6>
-                                <p class="post-intro">Developed a GUI flight and hotel booking using Java for frontend and MySql for the backend.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="images/cat3.PNG">
-                            <div class="post-preview">
-                                <h6 class="post-title">Hotel Management</h6>
-                                <p class="post-intro">Developed a hotel management website which deals with the online booking of the hotel rooms.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/TestMaverick.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
             </div>
-        </section>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Test Maverick (company project)</h3>
+              <p class="projects__row-content-desc">
+                Led the development of an innovative AI-powered proctoring and assessment solution from inception to implementation. Customizable to meet diverse needs, it empowers stakeholders in recruitment, testing, and education sectors to prioritize success.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='https://www.zeuslearning.com/testmaverick' target='_blank'>Website</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/webp/FacialRecognition.webp"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Face Recognition With Raspberry Pi and OpenCV</h3>
+              <p class="projects__row-content-desc">
+                College project employing Raspberry Pi and OpenCV for face recognition on doors. Enhancing security and access control through innovative technology integration.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='https://github.com/i-ravi/FaceRecognitionOpenCV' target='_blank'>Github Link</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/BloodBank.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Blood Bank</h3>
+              <p class="projects__row-content-desc">
+                Developed a college project Android app for a blood bank, enabling users to request blood donations and register as donors. Streamlining the process of connecting donors with those in need.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='https://github.com/i-ravi/Bloodbank' target='_blank'>Github Link</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/TravelAgency.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Travel Agency</h3>
+              <p class="projects__row-content-desc">
+                Created a comprehensive Travel Agency project utilizing Java JFrame Form and MySQL. Seamlessly integrating flight and hotel booking functionalities for an enhanced travel experience.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='https://github.com/i-ravi/TRAVEL_AGENCY' target='_blank'>Github Link</a
+              >
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="papers" class="projects sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Technical Papers</span>
+            <span class="heading-sec__sub">
+              Here you will my personal Technical paper published in IEEE.
+            </span>
+          </h2>
+  
+          <div class="projects__content">
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/webp/AgeEstimation.webp"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Age Estimation in Juveniles using CNN</h3>
+                <p class="projects__row-content-desc">
+                    This technical paper explores juvenile age estimation using convolutional neural networks and computer vision techniques. It addresses challenges and proposes solutions, with potential applications in crime prevention and surveillance.
+                </p>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='https://ieeexplore.ieee.org/abstract/document/9498483/authors#authors' target='_blank'>Show Publication</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action='#' class='contact__form' method='post'><input type='hidden' name='form-name' value='form 1' />
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/ravi-sharma-500067183/"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="Ravi Sharma Linkedin Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/i-ravi"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="Ravi Sharma Github Profile"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Ravi Sharma</h2>
+            <p class="main-footer__short-desc">
+                Backend and Full-Stack Developer passionate about driving product success.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <!-- <script
+      src="//code.tidio.co/hkirvl5pqs5cjjawh11xutnzjgtg9tfi.js"
+      async
+    ></script> -->
+  </body>
 </html>
